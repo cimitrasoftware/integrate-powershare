@@ -23,7 +23,7 @@ services:
     image: cimitra/web:latest
     ports:
       - 80:80
-      - 443:443
+      - 444:443
     restart: always
     environment:
       CIMITRA_API_URL: http://cimitra:5007
