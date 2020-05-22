@@ -11,7 +11,7 @@ services:
       - mongodata:/data/db
 
   cimitra:
-    image: cimitra/server:latest
+    image: cimitra/server:rc
     restart: always
     environment:
       APPIT_DB_URL: mongodb://db/cimitra_prod
@@ -20,7 +20,7 @@ services:
 
 
   web:
-    image: cimitra/web:latest
+    image: cimitra/web:rc
     ports:
       - 80:80
       - 443:443
