@@ -20,7 +20,7 @@ services:
 
 
   web:
-    image: cimitra/web:latest
+    image: cimitra/web:rc
     ports:
       - 80:80
       - 443:443
