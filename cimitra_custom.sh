@@ -57,11 +57,11 @@ PNG_FILE_OUT="powershare.png"
 function CUSTOM_PRE_INSTALL()
 {
 
-sudo mkdir -p ${BRANDING_DIRECTORY} 2> /dev/null
+mkdir -p ${BRANDING_DIRECTORY} 2> /dev/null
 
-sudo mkdir -p ${ICONS_DIRECTORY} 2> /dev/null
+mkdir -p ${ICONS_DIRECTORY} 2> /dev/null
 
-sudo test -d ${BRANDING_DIRECTORY} 2> /dev/null
+test -d ${BRANDING_DIRECTORY} 2> /dev/null
 
 declare -i BRANDING_DIRECTORY_EXISTS=`echo $?`
 
@@ -76,9 +76,9 @@ curl -skLJ ${PNG_FILE_IN} -o ./${PNG_FILE_OUT}
 
 curl -skLJ ${SVG_FILE_IN} -o ./${SVG_FILE_OUT}
 
-sudo cp ./*.svg ${ICONS_DIRECTORY}   
+cp ./*.svg ${ICONS_DIRECTORY}   
 
-sudo cp ./*.png ${ICONS_DIRECTORY}   
+cp ./*.png ${ICONS_DIRECTORY}   
 
 }
 
